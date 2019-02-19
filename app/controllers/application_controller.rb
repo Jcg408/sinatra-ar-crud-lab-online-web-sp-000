@@ -15,7 +15,7 @@ class ApplicationController < Sinatra::Base
   
    get '/articles' do
     @articles = Article.all
-    redirect to '/articles/:id'
+    erb :index
   end
 
   post '/articles' do
