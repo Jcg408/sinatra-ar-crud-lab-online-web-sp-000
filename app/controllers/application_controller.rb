@@ -24,9 +24,6 @@ class ApplicationController < Sinatra::Base
     @article = Article.create(params[:id])
     
     erb :index
-    
-   
-    
   end
 
   get '/articles/:id' do
